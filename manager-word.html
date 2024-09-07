@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="ar-EG" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>هيئة الفروسية</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!-- favicon -->
+
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-50x50.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#3D5B58" />
+    <meta name="theme-color" content="#3D5B58" />
+    <link rel="manifest" href="images/manifest.json">    
+    <!-- description - keywords -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="custom-cursor">
+
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+
+    <!-- Start PreLoader - 1 
+    ============================================= -->
+    <div class="preloader">
+        <div class="preloader-container">
+            <span class="preloader-text">
+                <img src="images/preloader.gif">
+            </span>
+            <h5>
+                جارى التحميل <span class="loader"></span>
+            </h5>
+            <!-- <div class="preloader-animation"></div> -->
+        </div>
+    </div>
+    <!-- end PreLoader - 1 
+    ============================================= -->
+
+    <main class="page-wrapper">
+
+        <header class="header-wrapper">
+            <div class="main-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <nav class="navbar navbar-expand-xl navbar-light p-0">
+                                <a title="Home" class="navbar-brand p-0" href="#">
+                                    <img alt="logo" title="هيئة الفروسية" src="images/logo.svg">
+                                </a>
+
+                                <div class="main-header__inner">
+                                    <div class="main-header__inner__actions">
+                                        <div class="main-header__inner__actions__roznama">
+                                            <a href="#" class="main-header__inner__actions__roznama__button button-shape cursor-pointer" title="رزنامة الفعاليات">
+                                                <span class="icon-roznama"></span>
+                                                <i class="roznama-text">رزنامة الفعاليات</i>
+                                            </a>
+                                        </div>
+                                        <!-- lang -->
+                                        <div class="main-header__inner__actions__settings cursor-pointer custom-dropdown-container">
+                                            <div class="main-header__inner__actions__settings__button custom-dropdown-toggle button-shape" title="الإعدادات">
+                                                <span class="icon-settings"></span>
+                                            </div>
+                                            <div class="main-header__inner__actions__settings__dropdown custom-dropdown">
+                                                <div class="main-header__inner__actions__settings__dropdown__fontresize">
+                                                    <div class="font-resize-btns">
+                                                        <button type="button" class="font-increaser font-btn" title="تكبير حجم الخط">
+                                                            <span class="letter">+</span>
+                                                        </button>
+                                                        <button type="button" class="font-decreaser font-btn" title="تصغير حجم الخط">
+                                                            <span class="letter">-</span>
+                                                        </button>
+                                                        <div class="capital-letter">
+                                                            A
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- fontresize -->
+                                                <div class="main-header__inner__actions__settings__dropdown__theme" title="ألوان مخصصه">
+                                                    <div id="switch" class="switch">
+                                                        <i class="icon-eye-slash"></i>
+                                                        <span class="title">  اللون الرمادي  </span>
+                                                    </div>
+                                                </div>
+                                                <!-- fontresize -->
+                                            </div>
+                                        </div>
+                                        <!-- settings -->
+                                        <div class="main-header__inner__actions__search custom-dropdown-container position-static">
+                                            <div class="main-header__inner__actions__search__button custom-dropdown-toggle button-shape cursor-pointer" title="البحث">
+                                                <span class="icon-search"></span>
+                                            </div>
+                                            <div class="main-header__inner__actions__search__dropdown custom-dropdown">
+
+                                                <form class="position-relative mb-4">
+                                                    <div class="row g-4">
+                                                        <label for="staticEmail" class="col-auto col-form-label"> 
+                                                            البحث في الموقع 
+                                                        </label>
+                                                        <div class="col-lg col-12">
+                                                            <div class="form-group">
+                                                                <div class="input-group input-group-abs">
+                                                                    <input id="staticEmail" type="text" class="form-control cursor-pointer" placeholder="">
+                                                                    <div class="input-group-append">
+                                                                        <button class="btn btn-lg btn-primary h-100"><i class="icon-search"></i> </button> 
+                                                                        </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="main-header__inner__actions__search__dropdown__words">
+                                                                <div class="title col-auto">
+                                                                    <strong> كلمات شائعة في البحث </strong>
+                                                                </div> 
+                                                                <ul class="words-list hoverlink">
+                                                                    <li class="words-list-item">
+                                                                        <a href="#"> <span data-hover=" أخبار الموظفين "> أخبار الموظفين </span> </a>
+                                                                    </li>
+                                                                    <li class="words-list-item">
+                                                                        <a href="#"> <span data-hover=" الإحصائيات التعليمية والخدمات الصحية "> الإحصائيات التعليمية والخدمات الصحية </span> </a>
+                                                                    </li>
+                                                                    <li class="words-list-item">
+                                                                        <a href="#"> <span data-hover=" النشرة الرسمية لمكتب الأمانة "> النشرة الرسمية لمكتب الأمانة </span> </a>
+                                                                    </li>
+                                                                    <li class="words-list-item">
+                                                                        <a href="#"> <span data-hover=" الإحصائيات التعليمية والخدمات الصحية ">الإحصائيات التعليمية والخدمات الصحية</span> </a>
+                                                                    </li>
+                                                                    <li class="words-list-item">
+                                                                        <a href="#"> <span data-hover=" النشرة الرسمية لمكتب الأمانة ">  النشرة الرسمية لمكتب الأمانة  </span> </a>
+                                                                    </li>
+                                                                    <li class="words-list-item">
+                                                                        <a href="#"> <span data-hover=" أخبار  الموظفين ">  أخبار الموظفين  </span> </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                                <!-- form -->
+                                            </div>
+                                        </div>
+                                        <!-- search -->
+                                        <div class="main-header__inner__actions__lang">
+                                            <a href="#" class="main-header__inner__actions__lang__button button-shape cursor-pointer" title="اللغة الإنجليزية">
+                                                EN
+                                            </a>
+                                        </div>
+                                        <!-- lang -->
+                                        <button class="menu-start navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                            <svg id="ham-menu" viewBox="0 0 100 100">
+                                                <path class="line line1"
+                                                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058">
+                                                </path>
+                                                <path class="line line2" d="M 20,50 H 80"></path>
+                                                <path class="line line3"
+                                                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!--End main-header__inner__actions -->
+
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav w-100 hoverlink">
+                                            <li class="nav-item position-relative active">
+                                                <a class="nav-link d-block" href="#"> 
+                                                    <span data-hover="الرئيسية">الرئيسية</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown  position-relative">
+                                                <a class="nav-link dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                                    <span data-hover="عن الهيئة">عن الهيئة</span>
+                                                    <i class="dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة سمو الرئيس">
+                                                                كلمة سمو الرئيس  
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة رئيس الهيئة">
+                                                                كلمة رئيس الهيئة 
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown position-relative">
+                                                <a class="nav-link dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                                    <span data-hover="قطاعات الفروسية">قطاعات الفروسية</span>
+                                                    <i class="dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة سمو الرئيس">
+                                                                كلمة سمو الرئيس  
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة رئيس الهيئة">
+                                                                كلمة رئيس الهيئة 
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown position-relative">
+                                                <a class="nav-link dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                                    <span data-hover="دليل الخدمات">دليل الخدمات</span>
+                                                    <i class="dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة سمو الرئيس">
+                                                                كلمة سمو الرئيس  
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة رئيس الهيئة">
+                                                                كلمة رئيس الهيئة 
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown position-relative">
+                                                <a class="nav-link dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                                    <span data-hover="الأنظمة و اللوائح">الأنظمة و اللوائح</span>
+                                                    <i class="dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة سمو الرئيس">
+                                                                كلمة سمو الرئيس  
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة رئيس الهيئة">
+                                                                كلمة رئيس الهيئة 
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown position-relative">
+                                                <a class="nav-link dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                                    <span data-hover="التدريب و التطوير">التدريب و التطوير</span>
+                                                    <i class="dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة سمو الرئيس">
+                                                                كلمة سمو الرئيس  
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة رئيس الهيئة">
+                                                                كلمة رئيس الهيئة 
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown position-relative">
+                                                <a class="nav-link dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                                                    <span data-hover="المركز الإعلامي">المركز الإعلامي</span>
+                                                    <i class="dropdown-toggle"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة سمو الرئيس">
+                                                                كلمة سمو الرئيس  
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="الرؤية والرسالة والأهداف">
+                                                                الرؤية والرسالة والأهداف
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item position-relative">
+                                                        <a class="dropdown-item" href="#">
+                                                            <span data-hover="كلمة رئيس الهيئة">
+                                                                كلمة رئيس الهيئة 
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item position-relative">
+                                                <a class="nav-link d-block" href="#">  
+                                                    <span data-hover="اتصل بنا">اتصل بنا</span>
+                                                </a>
+                                            </li>
+                                         </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- row -->
+                </div>
+                <!-- container -->
+            </div>
+            <!-- main-header -->
+        </header>
+        <!-- header-wrapper -->
+
+        <section class="page-banner" data-aos="fade-down">
+            <div class="container">
+                <div class="page-banner__inner">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <div class="page-banner__title-breadcramb">
+                                <h4 class="page-banner__title">  كلمة رئيس مجلس الإدارة  </h4>
+                                <nav class="page-banner__nav" aria-label="breadcrumb">
+                                    <ol class="breadcrumb page-banner__nav__list">
+                                        <li class="breadcrumb-item page-banner__nav__list__item">
+                                            <a title="الرئيسية" href="#">
+                                                <i class="icon-home"></i>
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item page-banner__nav__list__item">
+                                            <a href="#">
+                                                عن الهيئة
+                                            </a>
+                                        </li>
+                                        <li class="breadcrumb-item page-banner__nav__list__item active" aria-current="page">
+                                            كلمة رئيس مجلس الإدارة
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                        <!-- col -->
+    
+                        <div class="col-auto">
+                            <div class="page-banner__icons">
+                                <a title="مشاركة" href="javascript:if(window.print)window.print()">
+                                    <i class="icon-share"></i>
+                                </a>
+                                <a title="طباعة" href="#">
+                                    <i class="icon-print"></i>
+                                </a>
+                                <a title="البريد الإلكترونى" href="#">
+                                    <i class="icon-mail"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- breadcrumb-sec -->
+
+        <section class="middle-content about-sec manager-word">
+            <div class="container">
+                <div class="middle-content__inner">
+                    <div class="row g-4 gx-5">
+                        <div class="col-xl order-xl-0 order-1" data-aos="fade-down">
+                           <div class="middle-content__inner__caption">
+                            <h4 class="middle-content__inner__caption__title"> نهضة شاملة للقطاع الفروسيّ </h4>
+                            <p class="middle-content__inner__caption__par">
+                                بدأت هيئة الفروسية منذ انطلاقاتها بالتعاون مع الجهات المعنية بالفروسية في المملكة ( نادي سباقات الخيل – الاتحاد السعودي للفروسية – الاتحاد السعودي للبولو – مركز الملك عبد العزيز للخيل العربية الأصيلة) في اتخاذ خطوات جادة نحو رصد الوضع الراهن لقطاع الفروسية في المملكة ومقارنته بأفضل الممارسات الدولية وإعداد الاستراتيجية الوطنية للفروسية سعياً لتحقيق نهضة شاملة للقطاع ورفع تصنيف الفروسية السعودية في كافة المجالات. شارك في هذه الجهود 15 جهة حكومية إضافة إلى 15 من كبار أندية الفروسية بالمملكة، كما أجري استطلاع رأي شارك فيه أكثر من 500 من المختصين في المملكة وأقيم أكثر من 50 اجتماعاً و 12 ورشة عمل، وفي جانب رصد أفضل الممارسات الدولية شارك 9 من الخبراء الدوليين المتخصصين في أكثر من 70 حلقة تركيز، كما روجعت 10 استراتيجيات وطنية للفروسية من 8 دول مختلفة.
+                            </p>
+                            <h5 class="middle-content__inner__caption__title"> 
+                                ركزت هذه الأنشطة على أربعة محاور رئيسية
+                            </h5>
+                            <ul class="middle-content__inner__caption__listnum">
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    رياضات الخيل
+                                </li>
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    انتاج الخيل وتربيتها
+                                </li>
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    الطب البيطري ورعاية الخيل
+                                </li>
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    الخيل اقتصاد الفروسية
+                                </li>
+                            </ul>
+                            <h5 class="middle-content__inner__caption__title"> 
+                                وذلك من أجل العمل على إحداث نقلة نوعية تحدث أثراً ملموساً على صعيد
+                            </h5>
+                            <ul class="middle-content__inner__caption__listnum">
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    جودة الخيل في المملكة
+                                </li>
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    ارتفاع تصنيف البطولات السعودية
+                                </li>
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    توليد الوظائف 
+                                </li>
+                                <li class="middle-content__inner__caption__listnum__item">
+                                    تعزيز الأثر الاقتصادي لقطاع الفروسية
+                                </li>
+                            </ul>
+                           </div> 
+                        </div>
+                        <div class="col-xl-auto order-xl-1 order-0" data-aos="fade-down">
+                            <div class="about-sec__thumb">
+                                <img class="about-sec__thumb__image" src="images/HRH-full-size.png" alt="">
+                                <div class="about-sec__thumb__signature">
+                                    بندر بن خالد الفيصل
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 order-xl-2 order-2">
+                            <div class="middle-content__inner__caption">
+                            <p class="middle-content__inner__caption__par">
+                                كما عملت الهيئة بالتوازي مع إعداد الاستراتيجية الوطنية للفروسية على دعم الجهات لإقامة عدد من البطولات الدولية الناجحة في المملكة، رغم تحديات جائحة كورونا التي وفق الله لتجاوزها على أتم وجه. 
+                                <br>
+                                <br>
+                                 لا يزال الطريق أمام هيئة الفروسية وشركائها مليئاً بالتحديات ومليئاً بالفرص كذلك لتكون المملكة العربية السعودية الجهة الأولى عالمياً في رياضات الفروسية، بتوفيق الله أولاً ثم بالدعم غير المحدود من القيادة الرشيدة وعلى رأسهم خادم الحرمين الشــريفين الملك ســلمان بن عبد العزيز آل ســعود، وصاحب الســمو الملكي الأمير محمد بن ســلمان بن عبد العزيز آل سعود ولي العهد نائب رئيس مجلــس الوزراء وزير الدفاع -حفظهمــا الله - . وجهود رواد الفروسية السعودية في سبيل تحقيق الطموحات ومستهدفات رؤية 2030
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-down">
+                        <div class="col-12">
+                            <div class="middle-content__inner__footer">
+                                <span>آخر تحديث</span>
+                                <b>20/03/2024</b>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- sectors-sec -->
+
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer__inner__logo">
+                                <a href="#"><img src="images/logo-footer.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="container">
+                    <div class="row gy-4 align-items-center">
+                        <div class="col-xl-4 order-0">   
+                            <ul class="footer__copyright__list hoverlink">
+                                <li class="footer__copyright__list__item">
+                                    <a class="footer__copyright__list__item__link" href="#">
+                                        <span data-hover="سياسة الخصوصية">سياسة الخصوصية</span>
+                                    </a>
+                                </li>
+                                <li class="footer__copyright__list__item">
+                                    <a class="footer__copyright__list__item__link" href="#">
+                                        <span data-hover="شروط الإستخدام">شروط الإستخدام</span>
+                                    </a> 
+                                </li>
+                                <li class="footer__copyright__list__item">
+                                    <a class="footer__copyright__list__item__link" href="#">
+                                        <span data-hover="خريطة الموقع">خريطة الموقع</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-5 order-xl-1 order-2">   
+                            <p class="footer__copyright__par m-0 text-center">
+                                جميع الحقوق محفوظة @ 2024- هيئة الفروسية - المملكه العربيه السعودية
+                            </p>
+                        </div>
+                        <div class="col-xl-3 order-xl-2 order-1">   
+                            <div class="footer__copyright__social">
+                                <ul class="list ht-social-networks solid-rounded-icon">
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="youtube"
+                                            class="social-link hint--top">
+                                            <i class="icon-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="instagram"
+                                            class="social-link hint--top">
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="linkedin"
+                                            class="social-link hint--top">
+                                            <i class="icon-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="X"
+                                            class="social-link hint--top">
+                                            <i class="icon-x-social"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank" aria-label="facebook" 
+                                            class="social-link hint--top">
+                                            <i class="icon-facebook"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--End pagewrapper-->
+
+    <!-- Back to top with progress indicator-->
+    <div class="prgoress_indicator">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/fancybox.umd.js" type="text/javascript"></script>
+    <script src="js/ar.umd.js" type="text/javascript"></script>
+    <script src="js/aos.min.js" type="text/javascript"></script>
+    <script src='js/script.js' type='text/javascript'></script>
+</body>
+
+</html>
